@@ -3,18 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import Library from './ch_03/Library';
 import Clock from './ch_04/Clock';
 import CommentList from './ch_05/CommentList';
+import NotificationList from './ch_06/NotificationList';
+import Accommodate from './ch_07/Accommodate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(() => {
-  root.render(
-    <React.StrictMode>
-      <CommentList />
-    </React.StrictMode>
-  );
-}, 1000);
+root.render(
+  <React.StrictMode>
+    <Accommodate />
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
